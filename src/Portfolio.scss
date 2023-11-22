@@ -1,0 +1,164 @@
+.portfolio{
+    background-color: rgb(175, 245, 208);
+     align-items: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+      flex-direction: column;
+      padding: 8rem 1.7rem;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+    height: auto;
+    gap:5rem;
+  
+    // margin-right:10rem;
+  
+    .pro {
+   
+      display: flex;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+      border-radius: 1.7rem;
+  
+      &__1 {
+        height: 40rem;
+        flex-direction: row;
+        gap:2rem;
+        padding: 2rem;
+       
+  
+        @media (max-width: 1350px) {
+          height: 70rem;
+          flex-direction: column !important;
+          gap: 2rem;
+          width: fit-content;
+          margin: 0 auto;
+        }
+  
+        @media (max-width: 400px) {
+          width: 100%;
+        }
+      }
+  
+      &__img {
+        width: 53rem;
+        height: auto;
+        border-radius: 1.7rem;
+        background-color: #76767633;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  
+        @media (max-width: 1000px) {
+          width: 100%;
+         height: 40rem;
+        
+        }
+  
+        img {
+          width: 100%;
+          height: auto;
+          @media (max-width: 1000px) {
+            width: 100%;
+           height: 40rem;
+          
+          }
+          
+        }
+      }
+  
+    }
+  }
+  
+  .previmg:hover{
+    transform: translateY(-15%);
+      transition: transform 10s ease-in-out 0s;
+  }
+  .previmgdos:hover{
+    transform: translateY(-18%);
+      transition: transform 10s ease-in-out 0s;
+  }
+    
+      .description{
+       
+          flex-direction:column;
+          display: flex;
+          justify-content:right;
+          width:35%;
+          padding-top:3rem;
+          
+  
+          @media (max-width: 1350px) {
+            flex-direction: column !important;
+          margin-top:2rem;
+            width: 130%;
+            padding-right:100%;   
+  
+          }
+          @media (max-width: 750px) {
+            width: 100%;
+            padding-right:50%; 
+            margin-top:3rem;
+                   
+          }
+          @media (max-width: 500px) {
+            width: 120%;
+    margin-left:-8rem;
+            height: 35rem;
+                   
+          }
+        }
+  
+  
+  .projectskills{
+  
+    display:flex;
+  margin-top:2rem;
+   color:black;
+   font-size: 3rem;
+   width:10rem;
+   gap:1rem;
+  
+  }
+  .ptag{
+    font-size: 3rem;
+  }
+  .skillone{
+  margin-right: 1rem;
+    
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.6);
+    border-radius:.5rem;
+    background-color: rgb(223, 232, 227);
+  }
+  .skilltwo{
+   
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.6);
+    border-radius:.5rem;
+    background-color:  rgb(223, 232, 227);
+  }
+  .enlaces{
+    
+    margin-top:2rem;
+    @media (max-width: 500px)
+    {
+     width: 180%;
+     margin-left:-3rem
+    }
+  }
+  .codegit{
+    color:black;
+    font-size: 1.8rem;
+    margin-top:2rem;
+  }
+  .livedemo{
+    color:black;
+    font-size: 1.8rem;
+    margin:2rem;
+  }
+  .minidesc{
+   
+    font-size: 1.5rem;
+  
+  }
